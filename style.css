@@ -1,0 +1,98 @@
+
+
+body {
+    color: white;
+    font-size: 15px;
+}
+main {
+  display: grid;
+  grid-template-columns: 1fr repeat(3, 300px) 1fr;
+  margin-top: 175px;
+}
+
+article {
+    padding: 35px;
+}
+
+section {
+    height: 500px;
+}
+
+p {
+    margin-top: 50px;
+    word-spacing: 5px;
+    font-family: "Lexend Deca";
+}
+
+h2 {
+    font-family: "Big Shoulders Display", sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+
+.sedans {
+  grid-column-start: 2;
+  grid-column-end: span 1;
+  background-color: hsl(31, 77%, 52%);
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.suvs {
+  grid-column-start: 3;
+  grid-column-end: span 1;
+  background-color: hsl(184, 100%, 22%);
+}
+
+.luxury {
+  grid-column-start: 4;
+  grid-column-end: span 1;
+  background-color: hsl(179, 100%, 13%);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.button {
+    padding: 19px 32px;
+    border-radius: 50px;
+    background-color: white;
+    border: none;
+    position: relative;
+    top: 100px;
+    left: 25px;
+}
+
+
+.button:hover {
+    cursor: pointer;
+}
+
+.button:active {
+    border: 1px solid white;
+    color: white;
+}
+
+.sedan-button:active {
+    background-color: hsl(31, 77%, 52%);
+}
+
+.suv-button:active {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.luxury-button:active {
+    background-color: hsl(179, 100%, 13%);
+}
+
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  grid-column-start: 3;
+  grid-column-end: span 1;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
