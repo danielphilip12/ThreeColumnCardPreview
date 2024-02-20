@@ -96,3 +96,48 @@ h2 {
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
+
+
+@media only screen and (max-width: 900px) {
+    main {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr) 10px;
+    }
+
+    .sedans {
+        grid-row-start: 1;
+        grid-row-end: span 1;
+        grid-column-start: 1;
+        grid-column-end: span 1;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0;
+    }
+
+    .suvs {
+        grid-row-start: 2;
+        grid-row-end: span 1;
+        grid-column-start: 1;
+        grid-column-end: span 1;
+    }
+    
+    .luxury {
+        grid-row-start: 3;
+        grid-row-end: span 1;
+        grid-column-start: 1;
+        grid-column-end: span 1;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        border-top-right-radius: 0;
+    }
+
+    .attribution {
+        font-size: 11px;
+        text-align: center;
+        grid-column-start: 1;
+        grid-column-end: span 1;
+        grid-row-start: 4;
+        grid-row-end: span 1;
+    }
+      
+}
